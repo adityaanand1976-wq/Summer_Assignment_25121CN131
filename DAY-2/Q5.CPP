@@ -1,0 +1,21 @@
+//program to find sum of digits of number 
+#include<iostream>
+using namespace std;
+
+int main(){
+int n,rem,sum = 0;
+cout<<"Enter the number:";
+cin>>n;
+
+while(n>0){
+    rem = n%10;
+    sum = sum+rem;
+    n = n/10;
+}
+
+cout<<"Sum of digits of Number is:"<<sum;
+return 0;
+
+
+
+}
